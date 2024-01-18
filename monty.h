@@ -23,14 +23,14 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_t - Variables -args, file, line content
+ * struct  - Variables -args, file, line content
  * @arg: Value
  * @file: Pointer to monty file
  * @content: Line content
  * @lifi: Flag change stack <-> queue
  * Description: Carries the values through the program
  */
-typedef struct bus_t
+typedef struct
 {
 	char *arg;
 	FILE *file;
