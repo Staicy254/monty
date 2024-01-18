@@ -11,6 +11,7 @@
  * Return: number
  */
 bus_t bus = {NULL, NULL, NULL, 0};
+
 int main(int argc, char *argv[])
 {
 	bus_t bus = {NULL, NULL, NULL, 0};
