@@ -1,16 +1,10 @@
 #define _GNU_SOURCE
 #include "monty.h"
 #include "execute.h"
+bus_t bus = {NULL, NULL, NULL, 0};
 
 int main(int argc, char *argv[]) {
-typedef struct bus_s{
-	char *arg;
-        FILE *file;
-        char *content;
-        size_t lifi;
-    } bus_t;
-    extern bus_t = {NULL, NULL, 1};
-
+	char *content;
     size_t size = 0;
     ssize_t read_line = 1;
     stack_t *stack = NULL;
@@ -28,7 +22,7 @@ typedef struct bus_s{
     }
 
     while (read_line > 0) {
-        char *content = NULL;
+        content = NULL;
         read_line = getline(&content, &size, bus.file);
         bus.content = content;
         counter++;
