@@ -14,6 +14,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 
 int main(int argc, char *argv[])
 {
+	bus_t bus = {NULL, NULL, NULL, 0};
 	size_t size = 0;
 	char *content;
 	ssize_t read_line = 1;
