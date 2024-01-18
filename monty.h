@@ -30,12 +30,12 @@ typedef struct stack_s
  * @lifi: Flag change stack <-> queue
  * Description: Carries the values through the program
  */
-typedef struct bus_s
+typedef struct
 {
 	char *arg;
 	FILE *file;
 	char *content;
-	int lifi;
+	size_t lifi;
 }  bus_t;
 extern bus_t bus;
 /**
